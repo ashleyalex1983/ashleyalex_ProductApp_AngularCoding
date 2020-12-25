@@ -1,0 +1,7 @@
+[
+ {"productId" : 1 , "productName" : "Leaf Rake" ,"productCode" : "GDN-0011" ,"productDesc" : "Description 1" ,"releaseDate" : "March 21, 2020","price" : 45.5,"starRating" : 3,"imageUrl" : ""}
+,{"productId" : 2 , "productName" : "Cart" ,"productCode" : "GDN-0012" ,"productDesc" : "Description 2" ,"releaseDate" : "March 22, 2020","price" : 25.5,"starRating" : 4,"imageUrl" : ""}
+,{"productId" : 3 , "productName" : "Hammer" ,"productCode" : "GDN-0013" ,"productDesc" : "Description 3" ,"releaseDate" : "March 23, 2020","price" : 40.5,"starRating" : 1,"imageUrl" : ""}
+,{"productId" : 4 , "productName" : "Saw" ,"productCode" : "GDN-0014" ,"productDesc" : "Description 4" ,"releaseDate" : "March 24, 2020","price" : 15.25,"starRating" : 5,"imageUrl" : ""}
+,{"productId" : 5 , "productName" : "Axe" ,"productCode" : "GDN-0015" ,"productDesc" : "Description 5" ,"releaseDate" : "March 25, 2020","price" : 65.5,"starRating" : 2,"imageUrl" : ""}
+]

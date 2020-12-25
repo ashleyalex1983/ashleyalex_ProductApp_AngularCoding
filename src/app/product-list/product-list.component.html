@@ -1,0 +1,62 @@
+<div class="card">
+  <div class="card-header">
+    {{title}}
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              <button class="btn btn-primary"
+                  (click)="toggleImage()">
+                {{ showImage ? 'Hide' : 'Show' }} Image
+              </button>
+            </th>
+            <th>Product Name</th>
+            <th>Product Code</th>
+            <th>Available</th>
+            <th>Price</th>
+            <th>5 Star Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products; let i = index">
+            <td>
+              <img *ngIf ='showImage'
+                   [src] = 'product.imageUrl'
+                   [title] = 'product.productName'
+                   [style.width.px] = 'imageWidth'
+                   [style.margin.px] = 'imageMargin' >
+            </td>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.productCode }}</td>
+            <td>{{ product.releaseDate }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.starRating }}</td>
+            <td>
+              <!-- <div *ngIf="currentProduct"> -->
+                <!-- <h4>Product</h4>
+                <div>
+                  <label><strong>Name :</strong></label> {{currentProduct.productName}}
+                </div> -->
+                <a routerLink="/products/{{product._id}}" class="btn btn-warning">
+                  EDIT
+                </a>
+
+              <!-- </div> -->
+            </td>
+            <td>
+              <a (click)="onDelete(product)" class="btn btn-danger">
+                DELETE
+              </a>
+              <!-- <a (click)="deleteProductData()" class="btn btn-danger">
+                DELETE
+              </a> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<div class="card">
+  <form (ngSubmit)="AddProduct()">
+    <div class="card-header">
+      {{title}}
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <!-- <tr>
+              <td> <label>Product Id</label> </td>
+              <td>
+                <input type="text" name="p_id" [(ngModel)]="product_Item.productId">
+              </td>
+            </tr> -->
+            <tr>
+              <td> <label>Product Name</label> </td>
+              <td>
+                <input type="text" name="p_name" [(ngModel)]="product_Item.productName">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Product Code</label> </td>
+              <td>
+                <input type="text" name="p_code" [(ngModel)]="product_Item.productCode">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Product LaunchedOn</label> </td>
+              <td>
+                <input type="text" name="p_date" [(ngModel)]="product_Item.releaseDate">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Product Description</label> </td>
+              <td>
+                <input type="text" name="p_desc" [(ngModel)]="product_Item.description">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Product Price</label> </td>
+              <td>
+                <input type="text" name="p_price" [(ngModel)]="product_Item.price">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Product Rating</label> </td>
+              <td>
+                <input type="text" name="p_rating" [(ngModel)]="product_Item.starRating">
+              </td>
+            </tr>
+            <tr>
+              <td> <label>Product ImageUrl</label> </td>
+              <td>
+                <input type="text" name="p_image" [(ngModel)]="product_Item.imageUrl">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <!-- <button>Submit</button> -->
+                <input type="submit" value="Submit">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </form>
+</div>
